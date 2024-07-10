@@ -36,5 +36,4 @@ jobs:
             sudo systemctl enable apache2
             ls -al
             cd home
-            sudo rmdir /var/www/html/my-personal-portfolio
-            sudo mv * /var/www/html/my-personal-portfolio
+            sudo mv -r * /var/www/html/my-personal-portfolio
