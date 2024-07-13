@@ -32,6 +32,5 @@ jobs:
           script: |
             sudo apt-get -y update
             ls -al
-            cd home
             sudo rm -rf /var/www/html/my-personal-portfolio/*
             sudo mv * /var/www/html/my-personal-portfolio
