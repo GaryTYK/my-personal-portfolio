@@ -93,8 +93,8 @@ img {
 /* nav */
 
 .nav {
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end; */
     position: fixed;
     width: 100%;
     background: #172b4d;
@@ -102,9 +102,15 @@ img {
     z-index: 999;
 }
 
+.nav svg {
+    float: left;
+    padding: 1em 0;
+}
+
 .nav-list {
     display: flex;
     margin-right: 2rem;
+    float: right;
 }
 
 @media (max-width: 28.75em) {
@@ -325,4 +331,31 @@ footer i {
         flex-direction: column;
         text-align: center;
     }
+}
+
+.ast-logo-svg-icon {
+    width: 30px;
+    margin-left: 2rem;
+}
+
+#top_button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: lightslategray;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#top_button:hover {
+    background-color: var(--main-red);
 }
