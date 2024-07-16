@@ -4,6 +4,7 @@
     --main-red: #be3144;
     --main-blue: #45567d;
     --main-gray: #303841;
+    --main-light-blue: #2196f3;
 }
 
 /* Base reset */
@@ -90,6 +91,29 @@ img {
     width: 100%;
 }
 
+span {
+    color: var(--main-light-blue);
+}
+
+.details-table td {
+    vertical-align: bottom !important;
+    padding-left: 0% !important;
+    width: 50%;
+}
+
+.td-bottom {
+    border-bottom: 1px solid var(--main-blue);
+}
+
+.skills-table th {
+    vertical-align: middle !important;
+    padding-left: 0% !important;
+}
+
+.skills-table i {
+    font-size: 70px;
+}
+
 /* nav */
 
 .nav {
@@ -143,10 +167,12 @@ img {
     width: 100%;
     height: 100vh;
     padding-top: 150px;
-    background-image: url('../img/hacker.gif');
+    padding-right: 100px;
+    padding-left: 100px;
+    /* background-image: url('../img/hacker.gif');
     background-position: center;
     background-size: cover;
-    overflow: hidden;
+    overflow: hidden; */
 }
 
 .welcome-section>p {
@@ -358,4 +384,15 @@ footer i {
 
 #top_button:hover {
     background-color: var(--main-red);
+}
+
+.detail-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-left: 100px;
+    padding-right: 100px;
 }
