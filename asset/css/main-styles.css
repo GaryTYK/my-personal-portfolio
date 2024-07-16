@@ -173,6 +173,7 @@ span {
     background-position: center;
     background-size: cover;
     overflow: hidden; */
+    border-bottom: 4px solid var(--main-red);
 }
 
 .welcome-section>p {
@@ -395,4 +396,5 @@ footer i {
     height: 100vh;
     padding-left: 100px;
     padding-right: 100px;
+    border-bottom: 4px solid var(--main-red);
 }
