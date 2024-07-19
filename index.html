@@ -1,249 +1,114 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="asset/css/main-styles.css">
-    <link rel="stylesheet/less" type="text/css" href="asset/css/timeline.less" />
-    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="asset/js/main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- =====Timeline===== -->
+    <link rel="stylesheet/less" type="text/css" href="assets/less/timeline.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+
+    <title>Portfolio website complete</title>
 </head>
 
 <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">G</a>
+            </div>
 
-    <nav id="navbar" class="nav">
-        <div class="ast-logo-svg-icon">
-            <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path
-                    d="M448 256c0 143.4-118.6 222.3-225 222.3c-132.3 0-222.1-106.2-222.1-222.4c0-124.4 100.9-223.9 223.1-223.9c84.84 0 167.8 55.28 167.8 88.2c0 18.28-14.95 32-32 32c-31.04 0-46.79-56.16-135.8-56.16c-87.66 0-159.1 70.66-159.1 159.8c0 34.81 27.19 158.8 159.1 158.8c79.45 0 144.6-55.1 158.1-126.7h-134.1c-17.67 0-32-14.33-32-32s14.33-31.1 32-31.1H416C433.7 224 448 238.3 448 256z">
-                </path>
-            </svg>
-        </div>
-        <ul class="nav-list">
-            <li>
-                <a href="#welcome-section">About</a>
-            </li>
-            <li>
-                <a href="#details">Experience</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </nav>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
 
-    <section id="welcome-section" class="welcome-section">
-        <div class="container">
-            <div class="w3-row">
-                <div class="w3-col l12 s12 welcome-section1">
-                    <h1>Hello, I am Gary a <span>Developer</span></h1>
-                    <p>Seasoned programming professional well-versed in
-                        working on applications, forms and databases.
-                        Expertise includes php, api and Mysql development
-                        tools. Team-oriented and hardworking with good
-                        verbal and written communication skills</p>
-                    <p>Looking for an opportunity to work in a challenging position combining my skills in Software
-                        Engineering, which provides professional development, interesting experiences and personal
-                        growth.</p>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Gary</span><br>a Developer</h1>
+
+                <a href="#contact" class="button">Contact</a>
+            </div>
+
+            <div class="home__social">
+                <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="mailto: z199429@gmail.com" class="home__social-icon"><i class='bx bx-envelope'></i></a>
+                <a href="https://github.com/GaryTYK/" class="home__social-icon"><i class='bx bxl-github'></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        <image class="home__blob-img" x="50" y="60" href="assets/img/about.png" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.png" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">I'am Gary</h2>
+                    <p class="about__text">Seasoned programming professional well-versed in working on applications,
+                        forms and databases. Expertise includes php, api and Mysql development tools. Team-oriented and
+                        hardworking with good verbal and written communication skills. Looking for an opportunity to
+                        work in a challenging position combining my skills in Software Engineering, which provides
+                        professional development, interesting experiences and personal growth.</p>
                 </div>
             </div>
-            <div class="w3-row">
-                <div class="w3-col l6 s12 welcome-section1">
-                    <h1>
-                        Details
-                    </h1>
-                    <table class="w3-table details-table">
-                        <tr>
-                            <td>
-                                <div class="td-bottom">
-                                    <p>Website : <a href="https://garytyk.github.io/my-personal-portfolio/"
-                                            target="_blank">https://garytyk.github.io/my-personal-portfolio/</a></p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="td-bottom">
-                                    <p>Email : z199429@gmail.com</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="td-bottom">
-                                    <p>Degree : Bachelor of Computing With Honors in Internet Tech: Computer Science</p>
-                                </div>
+        </section>
+        <!--===== Experience =====-->
+        <section class="experience bd-grid" id="experience">
+            <h2 class="section-title">Experience</h2>
 
-                            </td>
-                            <td>
-                                <div class="td-bottom">
-                                    <p>Phone : +852 51381115</p>
-                                </div>
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="td-bottom">
-                                    <p>City : Hong Kong</p>
-                                </div>
-
-                            </td>
-                            <td>
-                                <div class="td-bottom">
-                                    <p>Freelance : Available</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="asset/docs/resume.pdf" target="_target"
-                                    class="w3-button w3-blue w3-round">Download CV</a>
-                            </td>
-                            <td>
-                                <a href="#contact" data-section-index="0" class="w3-button w3-blue w3-round">Hire
-                                    Me</a>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="w3-col l6 s12 welcome-section2">
-                    <h1>Skills</h1>
-                    <table class="w3-table skills-table">
-                        <tr>
-                            <th>
-                                Languages:
-                            </th>
-                            <td>
-                                <i class="devicon-php-plain colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-html5-plain-wordmark colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-css3-plain-wordmark colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-sass-original colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-less-plain-wordmark colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-javascript-plain colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-python-plain-wordmark colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-markdown-original colored"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                Databases:
-                            </th>
-                            <td>
-                                <i class="devicon-mysql-plain-wordmark colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-sqlite-plain-wordmark colored"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                Frameworks:
-                            </th>
-                            <td>
-                                <i class="devicon-laravel-original-wordmark colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-ionic-original-wordmark colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-angular-plain-wordmark colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-nodejs-plain-wordmark colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-bootstrap-plain-wordmark colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-npm-original-wordmark colored"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                Tools &amp; Technologies:
-                            </th>
-                            <td>
-                                <i class="devicon-git-plain-wordmark colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-github-original-wordmark colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-bitbucket-original-wordmark colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-docker-plain-wordmark colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-apache-plain-wordmark colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-jira-plain-wordmark colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-vscode-plain-wordmark colored"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <i class="devicon-xcode-plain colored"></i>
-                            </td>
-                            <td>
-                                <i class="devicon-postman-plain-wordmark colored"></i>
-                            </td>
-                        </tr>
-                    </table>
-                    <!-- <ul>
-                        <li><b>Languages:</b> Python, JavaScript, HTML/CSS,php
-                        </li>
-                        <li><b>Databases:</b> MySQL, PostgreSQL, MongoDB</li>
-                        <li><b>Frameworks:</b> Node.js, Bootstrap, Laravel, Angular, Ionic</li>
-                        <li><b>Tools &amp; Technologies:</b> Git, Docker, AWS</li>
-                    </ul> -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="details" class="detail-section">
-        <div class="container">
-            <div class="w3-row">
-                <div class="w3-col l6 s12 welcome-section1">
+            <div class="experience__container bd-grid">
+                <div>
                     <div id="timeline-content">
                         <h1>Education</h1>
 
                         <ul class="timeline">
                             <li class="event">
-                                <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2015 to 2017</h6>
+                                <h4 class="timeline-date"><i class='bx bxs-calendar'></i> 2015 to 2017</h4>
                                 <h3>Bachelor of Computing With Honors in Internet Tech: Computer Science</h3>
                                 <p>The Open University of Hong Kong - Ho Man Tin</p>
                             </li>
                             <li class="event">
-                                <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2013 to 2015</h6>
+                                <h4 class="timeline-date"><i class='bx bxs-calendar'></i> 2013 to 2015</h4>
                                 <h3>The Hong Kong Institute of Vocational Education Higher Diploma in Information and
                                     Network Security</h3>
                                 <p>IVE, Chai Wan</p>
@@ -251,23 +116,24 @@
                         </ul>
                     </div>
                 </div>
-                <div class="w3-col l6 s12 welcome-section1">
+
+                <div>
                     <div id="timeline-content">
                         <h1>Experience</h1>
 
                         <ul class="timeline">
                             <li class="event">
-                                <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2021 to 2023</h6>
+                                <h4 class="timeline-date"><i class='bx bxs-calendar'></i> 2021 to 2023</h4>
                                 <h3>Senior Programmer</h3>
                                 <p>iDigital Technology Solutions Ltd., Lai Chi Kok</p>
                             </li>
                             <li class="event">
-                                <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2019 to 2021</h6>
+                                <h4 class="timeline-date"><i class='bx bxs-calendar'></i> 2019 to 2021</h4>
                                 <h3>Senior Programmer</h3>
                                 <p>Amoebian, Kwun Tong</p>
                             </li>
                             <li class="event">
-                                <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2014 to 2018</h6>
+                                <h4 class="timeline-date"><i class='bx bxs-calendar'></i> 2014 to 2018</h4>
                                 <h3>Part Time Computer Technician</h3>
                                 <p>Hong Kong Central Libraries, Causeway Bay</p>
                             </li>
@@ -275,87 +141,252 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects" class="projects-section">
-        <h2 class="projects-section-header">My Projects</h2>
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
 
-        <div class="projects-grid">
-            <a href="https://garytyk.github.io/my-personal-portfolio/survey-form/" target="_blank"
-                class="project project-tile">
-                <img class="project-image" src="asset/img/project1.PNG" alt="project">
-                <p class="project-title">
-                    <span class="code">&lt;</span>
-                    Survey Form
-                    <span class="code">/&gt;</span>
-                </p>
-            </a>
-            <a href="https://garytyk.github.io/my-personal-portfolio/tribute-page/" target="_blank"
-                class="project project-tile">
-                <img class="project-image" src="asset/img/project2.PNG" alt="project">
-                <p class="project-title">
-                    <span class="code">&lt;</span>
-                    Tribute Page
-                    <span class="code">/&gt;</span>
-                </p>
-            </a>
-            <a href="https://garytyk.github.io/my-personal-portfolio/product-landing-page/" target="_blank"
-                class="project project-tile">
-                <img class="project-image" src="asset/img/project3.PNG" alt="project">
-                <p class="project-title">
-                    <span class="code">&lt;</span>
-                    Product Landing Page
-                    <span class="code">/&gt;</span>
-                </p>
-            </a>
-            <a href="https://garytyk.github.io/my-personal-portfolio/technical-documentation-page/" target="_blank"
-                class="project project-tile">
-                <img class="project-image" src="asset/img/project4.PNG" alt="project">
-                <p class="project-title">
-                    <span class="code">&lt;</span>
-                    Technical Documentation Page
-                    <span class="code">/&gt;</span>
-                </p>
-            </a>
-            <a href="https://garytyk.github.io/my-personal-portfolio" target="_blank" class="project project-tile">
-                <img class="project-image" src="asset/img/project5.PNG" alt="project">
-                <p class="project-title">
-                    <span class="code">&lt;</span>
-                    Personal Portfolio
-                    <span class="code">/&gt;</span>
-                </p>
-            </a>
-            <a href="http://54.206.103.219/" target="_blank" class="project project-tile">
-                <img class="project-image" src="asset/img/project6.PNG" alt="project">
-                <p class="project-title">
-                    <span class="code">&lt;</span>
-                    Web Development Team Website
-                    <span class="code">/&gt;</span>
-                </p>
-            </a>
-        </div>
-    </section>
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Languages:</h2>
 
-    <section id="contact" class="contact-section">
-        <div class="contact-section-header">
-            <h2>Contact With Me.</h2>
-        </div>
-        <div class="contact-links">
-            <a id="profile-link" href="https://github.com/GaryTYK/" target="_blank" class="btn contact-details"><i
-                    class="fab fa-github"></i> GitHub</a>
-            <a href="mailto: z199429@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
-            <a href="tel:555-555-5555" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
-        </div>
-    </section>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-html5-plain-wordmark colored skills__icon"></i>
+                            <span class="skills__name">HTML5</span>
+                        </div>
+                        <!-- <div class="skills__bar skills__css">
 
-    <footer>
-        <p>
-            Developer Portfolio by Gary
-        </p>
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div> -->
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-php-plain colored skills__icon"></i>
+                            <span class="skills__name">Php</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-css3-plain-wordmark colored skills__icon"></i>
+                            <span class="skills__name">CSS3</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-sass-original colored skills__icon"></i>
+                            <span class="skills__name">SASS</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-less-plain-wordmark colored skills__icon"></i>
+                            <span class="skills__name">LESS</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-javascript-plain colored skills__icon"></i>
+                            <span class="skills__name">Javascript</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-python-plain-wordmark colored skills__icon"></i>
+                            <span class="skills__name">Python</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-markdown-original colored skills__icon"></i>
+                            <span class="skills__name">Markdown</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="skills__subtitle">Databases:</h2>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-mysql-plain-wordmark colored skills__icon"></i>
+                            <span class="skills__name">Mysql</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-sqlite-plain-wordmark colored skills__icon"></i>
+                            <span class="skills__name">Sqlite</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <h2 class="skills__subtitle">Frameworks:</h2>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-laravel-original colored skills__icon"></i>
+                            <span class="skills__name">Laravel</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-ionic-original colored skills__icon"></i>
+                            <span class="skills__name">Ionic</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-angular-plain skills__icon"></i>
+                            <span class="skills__name">Angular</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-nodejs-plain-wordmark colored skills__icon"></i>
+                            <span class="skills__name">Nodejs</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-bootstrap-plain-wordmark colored skills__icon"></i>
+                            <span class="skills__name">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-npm-original-wordmark colored skills__icon"></i>
+                            <span class="skills__name">Npm</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <h2 class="skills__subtitle">Technologies:</h2>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-git-plain colored skills__icon"></i>
+                            <span class="skills__name">Git</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-github-original colored skills__icon"></i>
+                            <span class="skills__name">Github</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-bitbucket-original colored skills__icon"></i>
+                            <span class="skills__name">Bitbucket</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-amazonwebservices-plain-wordmark colored skills__icon"></i>
+                            <span class="skills__name">AWS</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-docker-plain colored skills__icon"></i>
+                            <span class="skills__name">Docker</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-apache-plain colored skills__icon"></i>
+                            <span class="skills__name">Apache</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-jira-plain colored skills__icon"></i>
+                            <span class="skills__name">Jira</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="devicon-postman-plain colored skills__icon"></i>
+                            <span class="skills__name">Postman</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
+
+            <div class="work__container bd-grid">
+                <a href="" class="work__img">
+                    <img src="assets/img/project1.PNG" alt="Survey Form">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/project2.PNG" alt="Tribute Page">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/project3.PNG" alt="Product Landing Page">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/project4.PNG" alt="Technical Documentation Page">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/project5.PNG" alt="Personal Portfolio">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/project6.PNG" alt="Web Development Team Website">
+                </a>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="button" value="Submit" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Gary</p>
+        <div class="footer__social">
+            <a href="https://github.com/GaryTYK/" class="footer__icon"><i class='bx bxl-github'></i></a>
+            <a href="mailto: z199429@gmail.com" class="footer__icon"><i class='bx bx-envelope'></i></a>
+            <a href="tel:555-555-5555" class="footer__icon"><i class='bx bx-mobile'></i></a>
+        </div>
+        <p class="footer__copy">&#169; Developer Portfolio by Gary</p>
     </footer>
 
-    <button onclick="topFunction()" id="top_button" title="Go to top">^</button>
+    <button onclick="topFunction()" id="top_button" title="Go to top"><i class='bx bx-chevron-up'></i></button>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
