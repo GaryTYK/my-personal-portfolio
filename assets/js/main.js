@@ -52,9 +52,9 @@ const sr = ScrollReveal({
 });
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
-sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
+sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 100}); 
 sr.reveal('.home__social-icon, .work__img, #timeline-content',{ interval: 200}); 
-sr.reveal('.skills__data, .contact__input',{delay: 200}); 
+sr.reveal('.skills__data, .contact__input',{delay: 100}); 
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
