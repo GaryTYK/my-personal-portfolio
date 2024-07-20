@@ -13,13 +13,18 @@ showMenu('nav-toggle','nav-menu')
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
+const dropdownItem = document.querySelectorAll('.dropdown-item')
 
-function linkAction(){
+function linkAction(event){
     const navMenu = document.getElementById('nav-menu')
     // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show')
+    if(event.target.id != 'languages'){
+        navMenu.classList.remove('show')
+    }
 }
+
 navLink.forEach(n => n.addEventListener('click', linkAction))
+dropdownItem.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
