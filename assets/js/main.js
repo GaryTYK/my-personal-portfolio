@@ -18,7 +18,7 @@ const dropdownItem = document.querySelectorAll('.dropdown-item')
 function linkAction(event){
     const navMenu = document.getElementById('nav-menu')
     // When we click on each nav__link, we remove the show-menu class
-    if(event.target.id != 'languages'){
+    if(event.target.id != 'nav_languages'){
         navMenu.classList.remove('show')
     }
 }
@@ -78,3 +78,36 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// Get all dropdown items
+const dropdownItems = document.querySelectorAll('.dropdown-item');
+var xhr = new XMLHttpRequest();  //Create an xhr instance
+var translator = new MultiLanguage(); // define translator, create a default instance
+translator.registerSelect(document.getElementById("language_select"));  //register select(s)
+
+// Add event listener to each dropdown item
+dropdownItems.forEach(item => {
+    item.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        const href = this.getAttribute('href');
+        const languageCode = href.substring(1); // Remove the leading '#'
+
+        document.getElementById("language_select").value = languageCode;
+        document.getElementById("language_select").dispatchEvent(new Event('change'));
+    });
+});
+
+xhr.open("GET","/assets/lang/main.json"); // Define target file and HTTP method to use.
+
+xhr.onreadystatechange=(e)=>{
+  if(xhr.readyState === 4 && xhr.status === 200)
+  {
+    var jsonResponse = JSON.parse(xhr.responseText); // get response text and parse it into JSON.
+
+    translator.addSheet(jsonResponse);
+  }
+}
+xhr.send()
+
+
+

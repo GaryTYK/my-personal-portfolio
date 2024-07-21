@@ -15,6 +15,9 @@
     <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
     <!-- =====flag Icons===== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+    <!-- =====Multi Language===== -->
+    <script src="https://cdn.jsdelivr.net/gh/askask11/multi-language@0.1.4/dist/multi-language.min.js"
+        integrity="sha256-xL5PbSBwYLKYaUvdDP2S/lnF9s3oAPm/92GnACZBe2c=" crossorigin="anonymous"></script>
 
     <title>My personal portfolio</title>
 </head>
@@ -37,14 +40,18 @@
                     <li class="nav__item"><a href="#experience" class="nav__link" id="nav_experience">Experience</a>
                     </li>
                     <li class="nav__item"><a href="#skills" class="nav__link" id="nav_skills">Skills</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link" id="nav_work">Work</a></li>
+                    <li class="nav__item"><a href="#project" class="nav__link" id="nav_project">Project</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link" id="nav_contact">Contact</a></li>
                     <li class="nav__item dropdown">
                         <a href="#" class="nav__link" id="nav_languages">Languages</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#"><span class="fi fi-gb"></span> English</a>
-                            <a class="dropdown-item" href="#"><span class="fi fi-hk"></span> HKG</a>
+                            <a class="dropdown-item" href="#en" id="english"><span class="fi fi-gb"></span> English</a>
+                            <a class="dropdown-item" href="#zh" id="hkg"><span class="fi fi-hk"></span> HKG</a>
                         </div>
+                        <select id="language_select" style="display: none;">
+                            <option value="en">English</option>
+                            <option value="zh">HKG</option>
+                        </select>
                     </li>
                 </ul>
             </div>
@@ -59,10 +66,11 @@
         <!--===== HOME =====-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Hello,<br>I'am <span class="home__title-color">Gary</span><br>a Developer</h1>
+                <h1 class="home__title" id="home_title">Hello,<br>I'am <span class="home__title-color">Gary</span><br>a
+                    Developer</h1>
 
-                <a href="assets/docs/resume.pdf" target="_target" class="button">Download CV</a>
-                <a href="#contact" class="button">Contact</a>
+                <a href="assets/docs/resume.pdf" target="_target" class="button" id="cv_button">Download CV</a>
+                <a href="#contact" class="button" id="contact_button">Contact</a>
             </div>
 
             <div class="home__social">
@@ -100,7 +108,7 @@
 
         <!--===== ABOUT =====-->
         <section class="about section " id="about">
-            <h2 class="section-title">About</h2>
+            <h2 class="section-title" id="about_title">About</h2>
 
             <div class="about__container bd-grid">
                 <div class="about__img">
@@ -108,8 +116,9 @@
                 </div>
 
                 <div>
-                    <h2 class="about__subtitle">I'am Gary</h2>
-                    <p class="about__text">Seasoned programming professional well-versed in working on applications,
+                    <h2 class="about__subtitle" id="about_subtitle">I'am Gary</h2>
+                    <p class="about__text" id="about_text">Seasoned programming professional well-versed in working on
+                        applications,
                         forms and databases. Expertise includes php, api and Mysql development tools. Team-oriented and
                         hardworking with good verbal and written communication skills. Looking for an opportunity to
                         work in a challenging position combining my skills in Software Engineering, which provides
@@ -119,12 +128,12 @@
         </section>
         <!--===== Experience =====-->
         <section class="experience section" id="experience">
-            <h2 class="section-title">Experience</h2>
+            <h2 class="section-title" id="experience_title">Experience</h2>
 
             <div class="experience__container bd-grid">
                 <div>
                     <div id="timeline-content">
-                        <h1>Education</h1>
+                        <h1 id="education_subtitle">Education</h1>
 
                         <ul class="timeline">
                             <li class="event">
@@ -144,7 +153,7 @@
 
                 <div>
                     <div id="timeline-content">
-                        <h1>Experience</h1>
+                        <h1 id="experience_subtitle">Experience</h1>
 
                         <ul class="timeline">
                             <li class="event">
@@ -170,7 +179,7 @@
 
         <!--===== SKILLS =====-->
         <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title" id="skills_title">Skills</h2>
 
             <div class="skills__container bd-grid">
                 <div>
@@ -348,9 +357,9 @@
             </div>
         </section>
 
-        <!--===== WORK =====-->
-        <section class="work section" id="work">
-            <h2 class="section-title">Work</h2>
+        <!--===== Project =====-->
+        <section class="work section" id="project">
+            <h2 class="section-title" id="project_title">Project</h2>
 
             <div class="work__container bd-grid">
                 <a href="" class="work__img">
@@ -376,14 +385,14 @@
 
         <!--===== CONTACT =====-->
         <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
+            <h2 class="section-title" id="contact_title">Contact</h2>
 
             <div class="contact__container bd-grid">
                 <form action="" class="contact__form">
                     <input type="text" placeholder="Name" class="contact__input">
                     <input type="mail" placeholder="Email" class="contact__input">
                     <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Submit" class="contact__button button">
+                    <input type="button" value="Submit" class="contact__button button" id="submit">
                 </form>
             </div>
         </section>

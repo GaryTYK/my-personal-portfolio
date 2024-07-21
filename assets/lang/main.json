@@ -1,0 +1,156 @@
+[
+  {
+    "id": "english",
+    "langs": {
+      "en": "<span class='fi fi-gb'></span> English",
+      "zh": "<span class='fi fi-gb'></span> 英文"
+    }
+  },
+  {
+    "id": "hkg",
+    "langs": {
+      "en": "<span class='fi fi-hk'></span> HKG",
+      "zh": "<span class='fi fi-hk'></span> 繁體中文"
+    }
+  },
+  {
+    "id": "nav_home",
+    "langs": {
+      "en": "Home",
+      "zh": "首頁"
+    }
+  },
+  {
+    "id": "nav_about",
+    "langs": {
+      "en": "About",
+      "zh": "關於我"
+    }
+  },
+  {
+    "id": "nav_experience",
+    "langs": {
+      "en": "Experience",
+      "zh": "經驗"
+    }
+  },
+  {
+    "id": "nav_skills",
+    "langs": {
+      "en": "Skills",
+      "zh": "技術"
+    }
+  },
+  {
+    "id": "nav_project",
+    "langs": {
+      "en": "Project",
+      "zh": "作品"
+    }
+  },
+  {
+    "id": "nav_contact",
+    "langs": {
+      "en": "Contact",
+      "zh": "聯絡我"
+    }
+  },
+  {
+    "id": "nav_languages",
+    "langs": {
+      "en": "Languages",
+      "zh": "語言"
+    }
+  },
+  {
+    "id": "home_title",
+    "langs": {
+      "en": "Hello,<br>I'am <span class='home__title-color'>Gary</span><br>a Developer",
+      "zh": "你好, <br>我是<span class='home__title-color'>Gary</span><br>程式設計師"
+    }
+  },
+  {
+    "id": "cv_button",
+    "langs": {
+      "en": "Download CV",
+      "zh": "下載履歷"
+    }
+  },
+  {
+    "id": "contact_button",
+    "langs": {
+      "en": "Contact",
+      "zh": "聯絡我"
+    }
+  },
+  {
+    "id": "about_title",
+    "langs": {
+      "en": "About",
+      "zh": "關於我"
+    }
+  },
+  {
+    "id": "experience_title",
+    "langs": {
+      "en": "Experience",
+      "zh": "經驗"
+    }
+  },
+  {
+    "id": "skills_title",
+    "langs": {
+      "en": "Skills",
+      "zh": "技術"
+    }
+  },
+  {
+    "id": "project_title",
+    "langs": {
+      "en": "Project",
+      "zh": "作品"
+    }
+  },
+  {
+    "id": "contact_title",
+    "langs": {
+      "en": "Contact",
+      "zh": "聯絡我"
+    }
+  },
+  {
+    "id": "about_subtitle",
+    "langs": {
+      "en": "I'am Gary",
+      "zh": "我是Gary"
+    }
+  },
+  {
+    "id": "about_text",
+    "langs": {
+      "en": "Seasoned programming professional well-versed in working on applications, forms and databases. Expertise includes php, api and Mysql development tools. Team-oriented and hardworking with good verbal and written communication skills. Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.",
+      "zh": "經驗豐富的程式開發專業人員,擅長處理應用程式、表單和資料庫。專長包括PHP、API和MySQL開發工具。善於團隊合作,工作勤奮,擁有良好的口語和書面溝通技巧。正尋找一個挑戰性的職位,以結合我在程式設計工程方面的技能,提供專業的發展、有趣經驗和個人成長。"
+    }
+  },
+  {
+    "id": "education_subtitle",
+    "langs": {
+      "en": "Education",
+      "zh": "學歷"
+    }
+  },
+  {
+    "id": "experience_subtitle",
+    "langs": {
+      "en": "Experience",
+      "zh": "經驗"
+    }
+  },
+  {
+    "id": "submit",
+    "langs": {
+      "en": "Submit",
+      "zh": "確定"
+    }
+  }
+]
