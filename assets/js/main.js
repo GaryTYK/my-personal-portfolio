@@ -97,7 +97,7 @@ dropdownItems.forEach(item => {
     });
 });
 
-xhr.open("GET","/assets/lang/main.json"); // Define target file and HTTP method to use.
+xhr.open("GET","https://garytyk.github.io/my-personal-portfolio/assets/lang/main.json"); // Define target file and HTTP method to use.
 
 xhr.onreadystatechange=(e)=>{
   if(xhr.readyState === 4 && xhr.status === 200)
