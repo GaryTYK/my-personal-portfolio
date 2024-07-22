@@ -62,10 +62,10 @@ sr.reveal(".home__data, .about__img, .skills__subtitle, .skills__text", {});
 sr.reveal(".home__img, .about__subtitle, .about__text, .skills__img", {
   delay: 50,
 });
-sr.reveal(".home__social-icon, .work__img, #timeline-content", {
+sr.reveal(".home__social-icon, #timeline-content", {
   interval: 100,
 });
-sr.reveal(".skills__data, .contact__input", { delay: 50 });
+sr.reveal(".skills__data, .contact__input, .swiper", { delay: 50 });
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
