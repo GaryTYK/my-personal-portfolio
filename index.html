@@ -18,6 +18,9 @@
     <!-- =====Multi Language===== -->
     <script src="https://cdn.jsdelivr.net/gh/askask11/multi-language@0.1.4/dist/multi-language.min.js"
         integrity="sha256-xL5PbSBwYLKYaUvdDP2S/lnF9s3oAPm/92GnACZBe2c=" crossorigin="anonymous"></script>
+    <!-- =====Swiper===== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <title>My personal portfolio</title>
 </head>
@@ -361,26 +364,58 @@
         <section class="work section" id="project">
             <h2 class="section-title" id="project_title">Project</h2>
 
-            <div class="work__container bd-grid">
-                <a href="" class="work__img">
-                    <img src="assets/img/project1.PNG" alt="Survey Form">
-                </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/project2.PNG" alt="Tribute Page">
-                </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/project3.PNG" alt="Product Landing Page">
-                </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/project4.PNG" alt="Technical Documentation Page">
-                </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/project5.PNG" alt="Personal Portfolio">
-                </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/project6.PNG" alt="Web Development Team Website">
-                </a>
+            <div class="project__container bd-grid">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="https://garytyk.github.io/my-personal-portfolio/survey-form/" class="project__img">
+                                <img src="assets/img/project1.PNG" alt="Survey Form">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://garytyk.github.io/my-personal-portfolio/tribute-page/"
+                                class="project__img">
+                                <img src="assets/img/project2.PNG" alt="Tribute Page">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://garytyk.github.io/my-personal-portfolio/product-landing-page/"
+                                class="project__img">
+                                <img src="assets/img/project3.PNG" alt="Product Landing Page">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://garytyk.github.io/my-personal-portfolio/technical-documentation-page/"
+                                class="project__img">
+                                <img src="assets/img/project4.PNG" alt="Technical Documentation Page">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://garytyk.github.io/my-personal-portfolio" class="project__img">
+                                <img src="assets/img/project5.PNG" alt="Personal Portfolio">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="http://54.206.103.219/" class="project__img">
+                                <img src="assets/img/project6.PNG" alt="Web Development Team Website">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
             </div>
+
         </section>
 
         <!--===== CONTACT =====-->
