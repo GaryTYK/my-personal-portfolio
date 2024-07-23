@@ -9,9 +9,11 @@
     /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
     /* HSL color mode */
     --hue-color: 224;
-    /* --first-color: hsl(var(--hue-color), 89%, 60%); */
+    /* --first-color: gray */
     --first-color: lightslategray;
+    /* --first-color: black */
     --second-color: hsl(var(--hue-color), 56%, 12%);
+    /* --first-color: blue */
     --third-color: hsl(var(--hue-color), 89%, 60%);
     /*===== Fuente y tipografia =====*/
     --body-font: "Poppins", sans-serif;
@@ -588,8 +590,9 @@ img {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: lightslategray;
-    color: white;
+    background-color: var(--first-color);
+    ;
+    color: #fff;
     cursor: pointer;
     padding: 5px;
     padding-left: 10px;
@@ -599,7 +602,7 @@ img {
 }
 
 #top_button:hover {
-    background-color: red;
+    background-color: var(--third-color);
 }
 
 audio {
@@ -614,7 +617,7 @@ audio {
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #fff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -622,7 +625,7 @@ audio {
 }
 
 .dropdown-item {
-    color: black;
+    color: var(--second-color);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
