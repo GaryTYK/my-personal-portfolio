@@ -49,6 +49,24 @@ const scrollActive = () => {
 };
 window.addEventListener("scroll", scrollActive);
 
+/*===== THEME TOGGLE =====*/
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
+const body = document.body;
+
+// Check for saved theme in localStorage
+const savedTheme = localStorage.getItem('theme') || 'light';
+body.setAttribute('data-theme', savedTheme);
+themeIcon.className = savedTheme === 'dark' ? 'bx bx-moon' : 'bx bx-sun';
+
+// Theme toggle event
+themeToggle.addEventListener('click', () => {
+  const isDark = body.getAttribute('data-theme') === 'dark';
+  body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  themeIcon.className = isDark ? 'bx bx-sun' : 'bx bx-moon';
+  localStorage.setItem('theme', isDark ? 'light' : 'dark');
+});
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
   origin: "top",

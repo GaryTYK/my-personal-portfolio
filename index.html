@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
     <!-- =====BOX ICONS===== -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <!-- =====Timeline===== -->
     <link rel="stylesheet/less" type="text/css" href="assets/less/timeline.less" />
     <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
@@ -32,35 +32,52 @@
             <div>
                 <a href="#" class="nav__logo">TYK</a>
             </div>
-            <audio controls loop preload="none" style="display: none;">
-                <source src="assets/docs/I LIKE SUSHI.mp3" type="audio/mpeg">
+            <audio controls loop preload="none" style="display: none">
+                <source src="assets/docs/I LIKE SUSHI.mp3" type="audio/mpeg" />
             </audio>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link" id="nav_home">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link" id="nav_about">About</a></li>
-                    <li class="nav__item"><a href="#experience" class="nav__link" id="nav_experience">Experience</a>
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link" id="nav_home">Home</a>
                     </li>
-                    <li class="nav__item"><a href="#skills" class="nav__link" id="nav_skills">Skills</a></li>
-                    <li class="nav__item"><a href="#project" class="nav__link" id="nav_project">Project</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link" id="nav_contact">Contact</a></li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link" id="nav_about">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link" id="nav_experience">Experience</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link" id="nav_skills">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#project" class="nav__link" id="nav_project">Project</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link" id="nav_contact">Contact</a>
+                    </li>
                     <li class="nav__item dropdown">
                         <a href="#" class="nav__link" id="nav_languages">Languages</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#en" id="english"><span class="fi fi-gb"></span> English</a>
                             <a class="dropdown-item" href="#zh" id="hkg"><span class="fi fi-hk"></span> HKG</a>
                         </div>
-                        <select id="language_select" style="display: none;">
+                        <select id="language_select" style="display: none">
                             <option value="en">English</option>
                             <option value="zh">HKG</option>
                         </select>
                     </li>
+                    <li class="nav__item">
+                        <button id="theme-toggle" class="nav__link theme-toggle">
+                            <i class="bx bx-sun" id="theme-icon"></i>
+                        </button>
+                    </li>
                 </ul>
+
             </div>
 
             <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
+                <i class="bx bx-menu"></i>
             </div>
         </nav>
     </header>
@@ -69,25 +86,27 @@
         <!--===== HOME =====-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title" id="home_title">Hello,<br>I'am <span class="home__title-color">Gary</span><br>a
-                    Developer</h1>
+                <h1 class="home__title" id="home_title">
+                    Hello,<br />I'am <span class="home__title-color">Gary</span><br />a
+                    Developer
+                </h1>
 
                 <a href="assets/docs/resume.pdf" target="_target" class="button" id="cv_button">Download CV</a>
                 <a href="#contact" class="button" id="contact_button">Contact</a>
             </div>
 
             <div class="home__social">
-                <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="mailto: z199429@gmail.com" class="home__social-icon"><i class='bx bx-envelope'></i></a>
-                <a href="https://github.com/GaryTYK/" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                <a href="" class="home__social-icon"><i class="bx bxl-linkedin"></i></a>
+                <a href="mailto: z199429@gmail.com" class="home__social-icon"><i class="bx bx-envelope"></i></a>
+                <a href="https://github.com/GaryTYK/" class="home__social-icon"><i class="bx bxl-github"></i></a>
             </div>
 
             <div class="home__img">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" id="blobSvg">
                     <defs>
                         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" style="stop-color: lightslategray;"></stop>
-                            <stop offset="100%" style="stop-color: rgb(0, 0, 0);"></stop>
+                            <stop offset="0%" style="stop-color: lightslategray"></stop>
+                            <stop offset="100%" style="stop-color: rgb(0, 0, 0)"></stop>
                         </linearGradient>
                     </defs>
                     <mask id="mask0" mask-type="alpha">
@@ -110,17 +129,22 @@
         </section>
 
         <!--===== ABOUT =====-->
-        <section class="about section " id="about">
+        <section class="about section" id="about">
             <h2 class="section-title" id="about_title">About</h2>
 
             <div class="about__container bd-grid">
                 <div class="about__img">
-                    <img src="assets/img/about.webp" alt="">
+                    <img src="assets/img/about.webp" alt="" />
                 </div>
 
                 <div>
                     <h2 class="about__subtitle" id="about_subtitle">I'am Gary</h2>
-                    <p class="about__text" id="about_text">A greate professional Programmer, proficient in applications, CRUD, and database. Expertise includes PHP, API, and MySQL development tools. Team-oriented, diligent, and have good verbal and written communication skills.</p>
+                    <p class="about__text" id="about_text">
+                        A greate professional Programmer, proficient in applications,
+                        CRUD, and database. Expertise includes PHP, API, and MySQL
+                        development tools. Team-oriented, diligent, and have good verbal
+                        and written communication skills.
+                    </p>
                 </div>
             </div>
         </section>
@@ -135,14 +159,23 @@
 
                         <ul class="timeline">
                             <li class="event">
-                                <h4 class="timeline-date"><i class='bx bxs-calendar'></i> 2015 to 2017</h4>
-                                <h3>Bachelor of Computing With Honors in Internet Tech: Computer Science</h3>
+                                <h4 class="timeline-date">
+                                    <i class="bx bxs-calendar"></i> 2015 to 2017
+                                </h4>
+                                <h3>
+                                    Bachelor of Computing With Honors in Internet Tech: Computer
+                                    Science
+                                </h3>
                                 <p>The Open University of Hong Kong - Ho Man Tin</p>
                             </li>
                             <li class="event">
-                                <h4 class="timeline-date"><i class='bx bxs-calendar'></i> 2013 to 2015</h4>
-                                <h3>The Hong Kong Institute of Vocational Education Higher Diploma in Information and
-                                    Network Security</h3>
+                                <h4 class="timeline-date">
+                                    <i class="bx bxs-calendar"></i> 2013 to 2015
+                                </h4>
+                                <h3>
+                                    The Hong Kong Institute of Vocational Education Higher
+                                    Diploma in Information and Network Security
+                                </h3>
                                 <p>IVE, Chai Wan</p>
                             </li>
                         </ul>
@@ -155,17 +188,23 @@
 
                         <ul class="timeline">
                             <li class="event">
-                                <h4 class="timeline-date"><i class='bx bxs-calendar'></i> 2021 to 2023</h4>
+                                <h4 class="timeline-date">
+                                    <i class="bx bxs-calendar"></i> 2021 to 2023
+                                </h4>
                                 <h3>Senior Programmer</h3>
                                 <p>iDigital Technology Solutions Ltd., Lai Chi Kok</p>
                             </li>
                             <li class="event">
-                                <h4 class="timeline-date"><i class='bx bxs-calendar'></i> 2019 to 2021</h4>
+                                <h4 class="timeline-date">
+                                    <i class="bx bxs-calendar"></i> 2019 to 2021
+                                </h4>
                                 <h3>Senior Programmer</h3>
                                 <p>Amoebian, Kwun Tong</p>
                             </li>
                             <li class="event">
-                                <h4 class="timeline-date"><i class='bx bxs-calendar'></i> 2014 to 2018</h4>
+                                <h4 class="timeline-date">
+                                    <i class="bx bxs-calendar"></i> 2014 to 2018
+                                </h4>
                                 <h3>Part Time Computer Technician</h3>
                                 <p>Hong Kong Central Libraries, Causeway Bay</p>
                             </li>
@@ -233,7 +272,7 @@
                     </div>
                     <div class="skills__data">
                         <div class="skills__names">
-                            <i class="devicon-markdown-original colored skills__icon"></i>
+                            <i class="devicon-markdown-original skills__icon"></i>
                             <span class="skills__name">Markdown</span>
                         </div>
                     </div>
@@ -254,7 +293,6 @@
                             <span class="skills__name">Sqlite</span>
                         </div>
                     </div>
-
                 </div>
 
                 <div>
@@ -296,7 +334,6 @@
                             <span class="skills__name">Npm</span>
                         </div>
                     </div>
-
                 </div>
 
                 <div>
@@ -310,7 +347,7 @@
                     </div>
                     <div class="skills__data">
                         <div class="skills__names">
-                            <i class="devicon-github-original colored skills__icon"></i>
+                            <i class="devicon-github-original skills__icon"></i>
                             <span class="skills__name">Github</span>
                         </div>
                     </div>
@@ -350,7 +387,6 @@
                             <span class="skills__name">Postman</span>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -367,28 +403,28 @@
                         <!-- Slides -->
                         <div class="swiper-slide">
                             <a href="https://www.idigitalts.com/visitor-management-system/" class="project__img">
-                                <img src="assets/img/Visitor-Management-System.jpg" alt="Visitor Management System">
+                                <img src="assets/img/Visitor-Management-System.jpg" alt="Visitor Management System" />
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="http://fujichinawebpress.42web.io/" class="project__img">
-                                <img src="assets/img/fuji_project.PNG" alt="Fuji Website">
+                                <img src="assets/img/fuji_project.PNG" alt="Fuji Website" />
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="https://garytyk.github.io/my-personal-portfolio" class="project__img">
-                                <img src="assets/img/project5.PNG" alt="Personal Portfolio">
+                                <img src="assets/img/project5.PNG" alt="Personal Portfolio" />
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="http://54.206.103.219/" class="project__img">
-                                <img src="assets/img/project6.PNG" alt="Web Development Team Website">
+                                <img src="assets/img/project6.PNG" alt="Web Development Team Website" />
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="https://play.google.com/store/apps/details?id=dianbai.tradein.app"
                                 class="project__img">
-                                <img src="assets/img/e_project.PNG" alt="Dianbai App">
+                                <img src="assets/img/e_project.PNG" alt="Dianbai App" />
                             </a>
                         </div>
                         <!-- <div class="swiper-slide">
@@ -399,19 +435,19 @@
                         <div class="swiper-slide">
                             <a href="https://garytyk.github.io/my-personal-portfolio/tribute-page/"
                                 class="project__img">
-                                <img src="assets/img/project2.PNG" alt="Tribute Page">
+                                <img src="assets/img/project2.PNG" alt="Tribute Page" />
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="https://garytyk.github.io/my-personal-portfolio/product-landing-page/"
                                 class="project__img">
-                                <img src="assets/img/project3.PNG" alt="Product Landing Page">
+                                <img src="assets/img/project3.PNG" alt="Product Landing Page" />
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="https://garytyk.github.io/my-personal-portfolio/technical-documentation-page/"
                                 class="project__img">
-                                <img src="assets/img/project4.PNG" alt="Technical Documentation Page">
+                                <img src="assets/img/project4.PNG" alt="Technical Documentation Page" />
                             </a>
                         </div>
                     </div>
@@ -426,7 +462,6 @@
                     <div class="swiper-scrollbar"></div>
                 </div>
             </div>
-
         </section>
 
         <!--===== CONTACT =====-->
@@ -436,14 +471,14 @@
             <div class="contact__container bd-grid">
                 <div class="contact__form">
                     <div class="contact__information">
-                        <a href="https://github.com/GaryTYK/" class="contact__icon"><i class='bx bxl-github'></i></a>
+                        <a href="https://github.com/GaryTYK/" class="contact__icon"><i class="bx bxl-github"></i></a>
                         <div>
                             <p class="contact__title">Github</p>
                             <span class="contact__subtitle">https://github.com/GaryTYK/</span>
                         </div>
                     </div>
                     <div class="contact__information">
-                        <a href="mailto: z199429@gmail.com" class="contact__icon"><i class='bx bx-envelope'></i></a>
+                        <a href="mailto: z199429@gmail.com" class="contact__icon"><i class="bx bx-envelope"></i></a>
                         <div>
                             <p class="contact__title">Email</p>
                             <span class="contact__subtitle">z199429@gmail.com</span>
@@ -459,10 +494,10 @@
                 </div>
 
                 <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
+                    <input type="text" placeholder="Name" class="contact__input" />
+                    <input type="mail" placeholder="Email" class="contact__input" />
                     <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Submit" class="contact__button button" id="submit">
+                    <input type="button" value="Submit" class="contact__button button" id="submit" />
                 </form>
             </div>
         </section>
@@ -472,15 +507,17 @@
     <footer class="footer">
         <p class="footer__title">Gary</p>
         <div class="footer__social">
-            <a href="https://github.com/GaryTYK/" class="footer__icon"><i class='bx bxl-github'></i></a>
-            <a href="mailto: z199429@gmail.com" class="footer__icon"><i class='bx bx-envelope'></i></a>
+            <a href="https://github.com/GaryTYK/" class="footer__icon"><i class="bx bxl-github"></i></a>
+            <a href="mailto: z199429@gmail.com" class="footer__icon"><i class="bx bx-envelope"></i></a>
             <!-- <a href="tel:555-555-5555" class="footer__icon"><i class='bx bx-mobile'></i></a> -->
         </div>
         <p class="footer__copy">&#169; Developer Portfolio by Gary</p>
     </footer>
 
     <!--==================== SCROLL TOP ====================-->
-    <button onclick="topFunction()" id="top_button" title="Go to top"><i class='bx bx-chevron-up'></i></button>
+    <button onclick="topFunction()" id="top_button" title="Go to top">
+        <i class="bx bx-chevron-up"></i>
+    </button>
 
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>

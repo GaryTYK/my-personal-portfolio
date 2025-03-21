@@ -15,6 +15,15 @@
     --second-color: hsl(var(--hue-color), 56%, 12%);
     /* --first-color: blue */
     --third-color: hsl(var(--hue-color), 89%, 60%);
+    
+    /* Theme variables */
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --nav-bg-color: #ffffff;
+    --nav-footer-color: hsl(var(--hue-color), 56%, 12%);
+    --nav-text-color: var(--second-color);
+    --shadow-color: rgba(146, 161, 176, 0.15);
+
     /*===== Fuente y tipografia =====*/
     --body-font: "Poppins", sans-serif;
     --big-font-size: 2rem;
@@ -29,6 +38,29 @@
     /*===== z index =====*/
     --z-back: -10;
     --z-fixed: 100;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #f5f5f5;
+    --second-color: #f5f5f5;
+    --nav-bg-color: #2d2d2d;
+    --nav-text-color: #f5f5f5;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--nav-text-color);
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--first-color);
 }
 
 @media screen and (min-width: 968px) {
@@ -55,7 +87,9 @@ body {
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    color: var(--second-color);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1,
@@ -121,8 +155,9 @@ img {
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: #fff;
-    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+    background-color: var(--nav-bg-color);
+    box-shadow: 0 1px 4px var(--shadow-color);
+    transition: background-color 0.3s ease;
 }
 
 /*===== NAV =====*/
@@ -142,7 +177,7 @@ img {
         width: 80%;
         height: 100%;
         padding: 2rem;
-        background-color: var(--second-color);
+        background-color: var(--nav-bg-color);
         transition: 0.5s;
     }
 }
@@ -153,7 +188,8 @@ img {
 
 .nav__link {
     position: relative;
-    color: #fff;
+    color: var(--nav-text-color);
+    transition: color 0.3s ease;
 }
 
 .nav__link:hover {
@@ -402,7 +438,7 @@ img {
 
 /* ===== FOOTER =====*/
 .footer {
-    background-color: var(--second-color);
+    background-color: var(--nav-footer-color);
     color: #fff;
     text-align: center;
     font-weight: var(--font-semi);
@@ -617,7 +653,7 @@ audio {
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #fff;
+    background-color: var(--nav-bg-color);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -636,7 +672,7 @@ audio {
 }
 
 .dropdown-menu a:hover {
-    background-color: #f1f1f1
+    background-color: var(--shadow-color);
 }
 
 .project__container {
