@@ -168,7 +168,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-let domain = window.location.host;
+let domain = window.location.origin;
 let pathname = window.location.pathname;
 document.querySelector('input[name="_next"]').value =
   domain + pathname + "?success=1#contact";
