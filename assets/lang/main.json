@@ -152,5 +152,12 @@
       "en": "Submit",
       "zh": "確定"
     }
+  },
+  {
+    "id": "success",
+    "langs": {
+      "en": "Success. We will contact you as soon as possible!",
+      "zh": "成功。我們會盡快聯絡您！"
+    }
   }
 ]

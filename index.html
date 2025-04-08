@@ -189,6 +189,12 @@
                         <ul class="timeline">
                             <li class="event">
                                 <h4 class="timeline-date">
+                                    <i class="bx bxs-calendar"></i> 2024 to Now
+                                </h4>
+                                <h3>Freelancer</h3>
+                            </li>
+                            <li class="event">
+                                <h4 class="timeline-date">
                                     <i class="bx bxs-calendar"></i> 2021 to 2023
                                 </h4>
                                 <h3>Senior Programmer</h3>
@@ -412,8 +418,9 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://garytyk.github.io/my-personal-portfolio" class="project__img">
-                                <img src="assets/img/project5.PNG" alt="Personal Portfolio" />
+                            <a href="https://reverie-oscar.vercel.app/"
+                                class="project__img">
+                                <img src="assets/img/oscar-pj.png" alt="Technical Documentation Page" />
                             </a>
                         </div>
                         <div class="swiper-slide">
@@ -425,6 +432,11 @@
                             <a href="https://play.google.com/store/apps/details?id=dianbai.tradein.app"
                                 class="project__img">
                                 <img src="assets/img/e_project.PNG" alt="Dianbai App" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://garytyk.github.io/my-personal-portfolio" class="project__img">
+                                <img src="assets/img/project5.PNG" alt="Personal Portfolio" />
                             </a>
                         </div>
                         <div class="swiper-slide">
@@ -450,12 +462,6 @@
                                 <img src="assets/img/project3.PNG" alt="Product Landing Page" />
                             </a>
                         </div>
-                        <div class="swiper-slide">
-                            <a href="https://garytyk.github.io/my-personal-portfolio/technical-documentation-page/"
-                                class="project__img">
-                                <img src="assets/img/project4.PNG" alt="Technical Documentation Page" />
-                            </a>
-                        </div>
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
@@ -473,22 +479,22 @@
         <!--===== CONTACT =====-->
         <section class="contact section" id="contact">
             <h2 class="section-title" id="contact_title">Contact</h2>
-
+            <h1 id="success" style="text-align: center;background-color: #dc3545;padding: 10px;">Success. We will contact you as soon as possible!</h1>
             <div class="contact__container bd-grid">
                 <div class="contact__form">
                     <div class="contact__information">
                         <a href="https://github.com/GaryTYK/" class="contact__icon"><i class="bx bxl-github"></i></a>
-                        <div>
-                            <p class="contact__title">Github</p>
-                            <span class="contact__subtitle">https://github.com/GaryTYK/</span>
-                        </div>
+                            <div>
+                                <p class="contact__title">Github</p>
+                                <a href="https://github.com/GaryTYK/"><span class="contact__subtitle">https://github.com/GaryTYK/</span></a>
+                            </div>
                     </div>
                     <div class="contact__information">
                         <a href="mailto: z199429@gmail.com" class="contact__icon"><i class="bx bx-envelope"></i></a>
-                        <div>
-                            <p class="contact__title">Email</p>
-                            <span class="contact__subtitle">z199429@gmail.com</span>
-                        </div>
+                            <div>
+                                <p class="contact__title">Email</p>
+                                <a href="mailto: z199429@gmail.com"><span class="contact__subtitle">z199429@gmail.com</span></a>
+                            </div>
                     </div>
                     <!-- <div class="contact__information">
                         <a href="tel:555-555-5555" class="contact__icon"><i class='bx bx-mobile'></i></a>
@@ -499,11 +505,13 @@
                     </div> -->
                 </div>
 
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input" />
-                    <input type="mail" placeholder="Email" class="contact__input" />
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Submit" class="contact__button button" id="submit" />
+                <form action="https://formsubmit.co/z199429@gmail.com" method="POST" class="contact__form">
+                    <input type="hidden" name="_subject" value="New submission!"></input>
+                    <input type="hidden" name="_next" value=""></input>
+                    <input type="text" name="Name" placeholder="Name" class="contact__input" required/>
+                    <input type="mail" name="Email" placeholder="Email" class="contact__input" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required/>
+                    <textarea name="Message" id="" cols="0" rows="10" class="contact__input" required></textarea>
+                    <input type="submit" value="Submit" class="contact__button button" id="submit" />
                 </form>
             </div>
         </section>

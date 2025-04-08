@@ -50,21 +50,21 @@ const scrollActive = () => {
 window.addEventListener("scroll", scrollActive);
 
 /*===== THEME TOGGLE =====*/
-const themeToggle = document.getElementById('theme-toggle');
-const themeIcon = document.getElementById('theme-icon');
+const themeToggle = document.getElementById("theme-toggle");
+const themeIcon = document.getElementById("theme-icon");
 const body = document.body;
 
 // Check for saved theme in localStorage
-const savedTheme = localStorage.getItem('theme') || 'light';
-body.setAttribute('data-theme', savedTheme);
-themeIcon.className = savedTheme === 'dark' ? 'bx bx-moon' : 'bx bx-sun';
+const savedTheme = localStorage.getItem("theme") || "light";
+body.setAttribute("data-theme", savedTheme);
+themeIcon.className = savedTheme === "dark" ? "bx bx-moon" : "bx bx-sun";
 
 // Theme toggle event
-themeToggle.addEventListener('click', () => {
-  const isDark = body.getAttribute('data-theme') === 'dark';
-  body.setAttribute('data-theme', isDark ? 'light' : 'dark');
-  themeIcon.className = isDark ? 'bx bx-sun' : 'bx bx-moon';
-  localStorage.setItem('theme', isDark ? 'light' : 'dark');
+themeToggle.addEventListener("click", () => {
+  const isDark = body.getAttribute("data-theme") === "dark";
+  body.setAttribute("data-theme", isDark ? "light" : "dark");
+  themeIcon.className = isDark ? "bx bx-sun" : "bx bx-moon";
+  localStorage.setItem("theme", isDark ? "light" : "dark");
 });
 
 /*===== SCROLL REVEAL ANIMATION =====*/
@@ -167,3 +167,26 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+let domain = window.location.host;
+let pathname = window.location.pathname;
+document.querySelector('input[name="_next"]').value =
+  domain + pathname + "?success=1#contact";
+
+// Check URL parameters
+const urlParams = new URLSearchParams(window.location.search);
+const successParam = urlParams.get("success");
+
+// Get success element
+const successElement = document.getElementById("success");
+
+// Show/hide based on parameter
+if (successParam === "1" && successElement) {
+  successElement.style.display = "block";
+  // 5秒後自動隱藏
+  setTimeout(() => {
+    successElement.style.display = "none";
+  }, 5000);
+} else if (successElement) {
+  successElement.style.display = "none";
+}
