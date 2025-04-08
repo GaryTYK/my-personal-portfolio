@@ -67,24 +67,6 @@ themeToggle.addEventListener("click", () => {
   localStorage.setItem("theme", isDark ? "light" : "dark");
 });
 
-/*===== SCROLL REVEAL ANIMATION =====*/
-const sr = ScrollReveal({
-  origin: "top",
-  distance: "60px",
-  duration: 1000,
-  delay: 100,
-  //     reset: true
-});
-
-sr.reveal(".home__data, .about__img, .skills__subtitle, .skills__text", {});
-sr.reveal(".home__img, .about__subtitle, .about__text, .skills__img", {
-  delay: 50,
-});
-sr.reveal(".home__social-icon, #timeline-content", {
-  interval: 100,
-});
-sr.reveal(".skills__data, .contact__input, .swiper", { delay: 50 });
-
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction();
@@ -138,6 +120,24 @@ xhr.onreadystatechange = (e) => {
   }
 };
 xhr.send();
+
+/*===== SCROLL REVEAL ANIMATION =====*/
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 1000,
+  delay: 100,
+  //     reset: true
+});
+
+sr.reveal(".home__data, .about__img, .skills__subtitle, .skills__text", {});
+sr.reveal(".home__img, .about__subtitle, .about__text, .skills__img", {
+  delay: 50,
+});
+sr.reveal(".home__social-icon, #timeline-content", {
+  interval: 100,
+});
+sr.reveal(".skills__data, .contact__input, .swiper", { delay: 50 });
 
 const swiper = new Swiper(".swiper", {
   // Optional parameters
